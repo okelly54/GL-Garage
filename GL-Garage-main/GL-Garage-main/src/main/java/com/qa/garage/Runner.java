@@ -19,6 +19,13 @@ public class Runner {
 //		g.removeByType("car");
 		g.remove(Car.class);
 		System.out.println(g);
+
+		try {
+			g.getVehicle(0);
+		} catch (VehicleNotFoundException e) {
+
+			e.printStackTrace();
+		}
 	}
 
 }
